@@ -62,14 +62,14 @@ pod kutem od 45 stupnjeva
 */
 var wayY = startSpeeed;
 var wayX = Math.random() < 0.5 ? -startSpeeed : startSpeeed;
-const ballWidth = 10;
-const ballHeight = 10;
+const ballWidth = 20;
+const ballHeight = 20;
 var blocksStatus = [];
 var lastPosX;
 var lastPosY;
 var started = false;
-const toleranceLevel = 3;
-const speedChangeOnCornerHit = 1.1;
+const toleranceLevel = 6;
+const speedChangeOnCornerHit = 1.3;
 var score = 0;
 var highScore;
 var isBeatenHighScore = false;
