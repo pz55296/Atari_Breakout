@@ -4,8 +4,8 @@ gornjeg, lijevo i desnog ruba Canvasa. Također, moguće je generirati odgovaraj
 kraju igre, te kada igrač pređe neki okrugli broj bodova.
 */
 const breakSound = new Audio("sounds/break.mp3");
-const gameStartSound = new Audio("sounds/gamestart.mp3");
-const gameOverSound = new Audio("sounds/gameover.mp3");
+const gameStartSound = new Audio("sounds/gameStart.mp3");
+const gameOverSound = new Audio("sounds/gameOver.mp3");
 const padleBounceSound = new Audio("sounds/padleTouch.mp3");
 const wallBounceSound = new Audio("sounds/ballBounce.mp3");
 const highScoreSound = new Audio("sounds/highScore.mp3");
@@ -159,7 +159,7 @@ function setPadlePosition() {
     Loptica i palica ne smiju biti slike (JPG, PNG), već se moraju iscrtavati u Canvas objektu. Isto kao cigle.
     */
     ctx.fillStyle = "#FFF0F0";
-    ctx.shadowBlur = 10;
+    ctx.shadowBlur = 15;
     ctx.strokeStyle = "#FF0000";
     ctx.fillRect(padleX, padleY, padleWidth, padleHeight);
 }
@@ -180,7 +180,7 @@ function setBlocks() {
             HTML5 Canvas API-a.
             */
             ctx.shadowColor = "#ffee00ff";
-            ctx.shadowBlur = 5;
+            ctx.shadowBlur = 15;
             ctx.fillRect(blockX, blockY, blockWidth, blockHeight);
         }
     }
@@ -464,7 +464,7 @@ function updateScore() {
     ctx.fillStyle = "white";
     ctx.shadowBlur = 0;
     ctx.fillText(`${score}`, 20, 20);
-    ctx.shadowBlur = 5;
+    ctx.shadowBlur = 15;
 }
 //metoda za update high score
 function updateHighScore() {
@@ -473,7 +473,7 @@ function updateHighScore() {
     ctx.fillStyle = "white";
     ctx.shadowBlur = 0;
     ctx.fillText(`${highScore}`, x - 20, 20);
-    ctx.shadowBlur = 5;
+    ctx.shadowBlur = 15;
 }
 //metoda za spremanje high score u local storage
 function saveHighScore() {
