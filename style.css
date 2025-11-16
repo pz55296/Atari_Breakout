@@ -1,0 +1,9 @@
+canvas {
+/* Canvas objekt mora imati vidljivi rub bijele boje širine 5 piksela.*/
+border:5px solid #ffffff;
+/* Pozadina Canvasa mora biti crne boje. */
+background-color: #000000;
+}
+body {
+background-color: #5e5e5e;
+}

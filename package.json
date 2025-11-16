@@ -1,0 +1,15 @@
+{
+  "name": "html5-workers",
+  "version": "1.0.0",
+  "description": "HTML5 Web Workers demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 8000 -c-1"
+  },
+  "keywords": ["web", "workers"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
